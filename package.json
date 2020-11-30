@@ -1,0 +1,24 @@
+{
+  "name": "update1448",
+  "version": "1.0.0",
+  "description": "Class Project: Update 1448projects.org page",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottBranston/update1448.git"
+  },
+  "author": "Scott Branston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottBranston/update1448/issues"
+  },
+  "homepage": "https://github.com/scottBranston/update1448#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
