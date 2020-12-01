@@ -1,0 +1,50 @@
+#headerLogo {
+    width: 80%;
+    height: auto;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+ }
+
+#jumbo {
+    background-color: black;
+}
+
+.fa.fa-instagram {
+    border: none;
+    background-color: rgb(231, 0, 127);
+    color: white;
+}
+
+.fa.fa-instagram:hover {
+    border: none;
+    background-color:rgb(190, 0, 105);
+    color: white;
+}
+
+#h-text {
+    font-style: italic;
+    text-align: right;
+    color: white;
+    font-size: 20px;
+}
+
+#social-header li {
+    display: inline-block;
+}
+
+.container {
+    display: inline;
+  }
+  
+.no-expand {
+    box-sizing: border-box;
+    width: 0px;
+    min-width: 90%;
+    padding: 0px 100px 0px 70px;
+  }
+
+.navbar {
+    background-color: darkslategray;
+}
