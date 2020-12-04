@@ -23,6 +23,7 @@
     "popper": "^1.0.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
     "bootstrap-social": "^5.1.1",

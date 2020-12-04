@@ -3,8 +3,13 @@
     height: auto;
 }
 
+#logo {
+    margin: 0px;
+}
 .jumbotron {
-    margin-bottom: 0px;
+    margin-top: -60px;
+    margin-bottom: -60px;
+    max-width: 100%;
  }
 
 #jumbo {
@@ -25,9 +30,10 @@
 
 #h-text {
     font-style: italic;
+    font-size: 20px;
     text-align: right;
     color: white;
-    font-size: 20px;
+    text-shadow: 2px 2px rgb(61, 61, 61);
 }
 
 #social-header li {
@@ -36,15 +42,73 @@
 
 .container {
     display: inline;
-  }
+    margin: 0px;
+}
   
 .no-expand {
     box-sizing: border-box;
     width: 0px;
     min-width: 90%;
     padding: 0px 100px 0px 70px;
-  }
+}
 
 .navbar {
-    background-color: darkslategray;
+    background-color: dimgray;
+}
+
+.carousel {
+    border: solid black; 
+}
+
+.carousel img {
+    max-width: 100%;
+    width: auto   9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+  }
+
+  #carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; 
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 61px; 
+    color: black;
+    line-height: 1em;
+}
+
+h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: 26px; 
+    color: black;
+    line-height: 1em;
+}
+
+.rowContent {
+    margin: auto;
+    width: auto;
+    height: 764px;
+    border: 2px solid black;
+    padding: 10px;
+}
+#comingUpCols img {
+    width: 356px;
+    height: 360px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+img.rounded-corners {
+    border-radius: 5px;
 }
