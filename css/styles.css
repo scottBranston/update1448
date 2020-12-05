@@ -16,6 +16,11 @@
     background-color: black;
 }
 
+#home1448 {
+    height: 25px;
+    width: auto;
+}
+
 .fa.fa-instagram {
     border: none;
     background-color: rgb(231, 0, 127);
@@ -40,24 +45,38 @@
     display: inline-block;
 }
 
+#social-footer {
+    display: inline-block;
+    margin: 10px 0px;
+}
+
 .container {
     display: inline;
     margin: 0px;
 }
   
 .no-expand {
-    box-sizing: border-box;
     width: 0px;
     min-width: 90%;
-    padding: 0px 100px 0px 70px;
+    padding: 0px 90px 0px 80px;
 }
 
 .navbar {
-    background-color: dimgray;
+    background-color: black;
 }
 
+#loginModal .modal-header {
+    background-color: black;
+    color: white;
+}
+
+.modal-title {
+    color: white;
+}
 .carousel {
     border: solid black; 
+    border-radius: 5px;
+    background-color: black;
 }
 
 .carousel img {
@@ -66,6 +85,7 @@
     height: auto;
     vertical-align: middle;
     border: 0;
+    border-radius: 5px;
   }
 
   #carouselButton {
@@ -95,11 +115,19 @@ h3 {
     line-height: 1em;
 }
 
+#contact-us {
+    font-family: 'Special Elite', cursive;
+    font-size: 20px; 
+    color: white;
+    line-height: 1em;
+}
+
 .rowContent {
     margin: auto;
     width: auto;
-    height: 764px;
+    height: 800px;
     border: 2px solid black;
+    border-radius: 5px;
     padding: 10px;
 }
 #comingUpCols img {
@@ -109,6 +137,36 @@ h3 {
     margin: 5px;
 }
 
+#buy-tix {
+    border-radius: 5px;
+    position: relative;  
+    margin-left:25%; 
+    margin-bottom: 15px;
+}
+
+#fb-group {
+    border-radius: 5px;
+    position: relative;
+    margin-left: 25%;
+    margin-bottom: 15px;
+}
+
 img.rounded-corners {
     border-radius: 5px;
+}
+
+p {
+    max-width: fit-content;
+}
+
+.site-footer {
+    background-color: black;
+    padding: 20px 0; }
+
+#footer-donate {
+    margin-bottom: 5px;
+}
+
+#copyright {
+    color: white;
 }

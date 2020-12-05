@@ -43,14 +43,13 @@
                                 <div class="justify-content-center">
                                     <img id="headerLogo" src="img/header-logo.png" class="img-fluid" alt="the 1448 Projects logo" />
                                     <div class="no-expand">
-                                        <h3 id="h-text">
-                                            Producers of The World's Quickest Theater Festival & other feats of impossible theater, spanning the globe.</h3>
+                                        <h3 id="h-text">Producers of The World's Quickest Theater Festival & other feats of impossible theater, spanning the globe.</h3>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col">
-                            <a role="button" class="btn btn-primary btn-lg text-nowrap" id="reserveButton" href="https://v6.click4tix.com/tickets.php?type=general-admission&c=487&e=430220&d=10034037">Donate!</a>
+                            <a role="button" class="btn btn-primary btn-lg text-nowrap" id="donateHeader" data-toggle="tooltip" data-placement="bottom" title="Donate to support 14/48 today!" href="https://v6.click4tix.com/tickets.php?type=general-admission&c=487&e=430220&d=10034037">Donate!</a>
                         </div>
                     </div>
                 </div>
@@ -64,7 +63,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><img id="home1448" src="img/1448-icon.png" /><!--i class="fa fa-home fa-lg"--></i> Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-handshake-o fa-lg"></i> Support</a></li>
                         <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
@@ -78,6 +77,44 @@
                 </div>
             </div>
         </nav>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Sign In</h3>
+                        <button type="button" class="close" id="loginClose">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginEmail">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label class="sr-only" for="loginPassword">Password</label>
+                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label"> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" id="loginCancel">Cancel</button>
+                                    <button type="button" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row row-content">
                 <div class="col-md-8 col-xl-8 mx-auto">
@@ -128,24 +165,70 @@
             <div id="nextRow"class="row row-content">
                 <div class="col d-flex justify-content-center align-top">
                     <div class="rowContent">
-                        <img class="rounded-corners" src="img/1448-play.png" />
+                        <a href="https://www.the1448projects.org/1448-playground" target="_blank">
+                            <img class="rounded-corners" src="img/1448-play.png" />
+                        </a>
                         <p></p>
                         <h3>The 14/48 Playground</h3>
-                        <p style="max-width: fit-content;">The 14/48 Projects is an organization that thrives on bringing people together in new and exciting ways, building connections,  and strengthening our artistic community. Since that's not possible right now in light of our Shelter in Place mandate, we are looking at ways we can support everyone during this difficult time. </p><p style="max-width: fit-content;">So, we are launching The 14/48 Playground. This is a Facebook group where we can collaborate during these troubled times. Write songs. Write a play. Build a prop. Memorize a monologue. It can all start here.</p>
+                        <p style="max-width: fit-content;">The 14/48 Projects is an organization that thrives on bringing people together in new and exciting ways, building connections,  and strengthening our artistic community. Since that's not possible right now in light of our Shelter in Place mandate, we are looking at ways we can support everyone during this difficult time. </p><p style="max-width: fit-content;">So, we are launching The 14/48 Playground. This is a Facebook group where we can collaborate during these troubled times. Write songs. Write a play. Build a prop. Memorize a monologue. It can all start here. <a href="https://www.the1448projects.org/1448-playground" target="_blank">Learn more!</a></p>
+                        <a href="https://www.facebook.com/groups/1448playground/" target="_blank">
+                            <button id="fb-group" class="btn-primary text-nowrap">Join Us on Facebook!</button>
+                        </a>
                     </div>
                 </div>
-                <div class="col d-flex justify-content-center align-top">
+                <div class="col d-flex justify-content-center">
                     <div class="rowContent">
-                        <img class="rounded-corners" src="img/1448-ta-livestream.png" />
+                        <a href="https://www.the1448projects.org/anonymous" target="_blank">
+                            <img class="rounded-corners" src="img/1448-ta-livestream.png" />
+                        </a>
                         <p></p>
                         <h3>It's A Wonderful Livestream</h3>
-                        <h5 style="font-size: 70%; font-weight: bold;">Theater Anonymous</h5>
-                        <p style="max-width: fit-content;">December 12th, 2020</p>
-                        <p style="max-width: fit-content;">The 14/48 Annual Holiday event will be streaming this year online!</p>
+                        <h5 style="font-size: 70%; font-weight: bold; margin-bottom: 15px;">presented by Theater Anonymous</h5>
+                        <p>December 12th, 2020</p>
+                        <p>The 14/48 Annual Holiday event will be streaming this year online!</p>
+                        <p>Learn more about the <a href="https://www.the1448projects.org/anonymous" target="_blank">Event</a></p>
+                        <p>Learn more about the <a href="https://www.the1448projects.org/packages" target="_blank">Ticket Packages</a></p>
+                        <a href="https://click4tix.com/anonymous" target="_blank">
+                            <button id="buy-tix" class="btn-primary text-nowrap">Get Your Tickets Today!</button>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
+<!-- footer content -->
+        <footer class="site-footer">
+            <div class="container">
+                <!-- setting alignment centered items vertically  -->
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5 id="contact-us">Contact Us at: </h5>
+                        <span class="email">
+                            <a role="button" class="btb btn-link" style="color: white;" href="mailto:info@the1448projects.org"><i class="fa fa-envelope"></i> info@the1448projects.org</a>
+                        </span>
+                    </div>
+                    <div class="col-6 col-sm-5 justify-content-center">
+                        <a href="#">
+                            <img id="footerLogo" src="img/header-logo.png" class="img-fluid" alt="the 1448 Projects logo" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <div id="footer-donate" class="align-items-center">
+                            <a role="button" class="btn btn-primary text-nowrap" id="donateFooter" href="https://v6.click4tix.com/tickets.php?type=general-admission&c=487&e=430220&d=10034037">Donate!</a>
+                        </div>
+                        <div id="social-footer" class="align-items-center">
+                            <a class="btn btn-social-icon btn-instagram btn-sm" href="https://www.instagram.com/1448festival/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social-icon btn-facebook btn-sm" href="https://www.facebook.com/1448fest/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <a class="btn btn-social-icon btn-twitter btn-sm" href="https://twitter.com/1448festival" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div>
+                            <span id="copyright">&#169; 2020 by The 14/48 Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
         <!-- build:js js/main.js-->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
